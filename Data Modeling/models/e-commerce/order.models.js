@@ -27,7 +27,8 @@ const orderSchema = new mangoose.Schema({
     status:{
         type:String,
         enum: ["PENDING", "CANCELLED", "DELEVERED"],
-        default: "PENDING"
+        default: "PENDING",
+        tracking_ID : Number
     }
 
 },{timestamps : true})
